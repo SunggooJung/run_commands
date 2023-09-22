@@ -1,3 +1,4 @@
+#github pac:  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
 alias gc='git commit -n'
 alias ga='git add -u .'
 alias gp='git push'
