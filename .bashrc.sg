@@ -1,6 +1,7 @@
 #github pac:  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
 alias gc='git commit -n'
-alias ga='git add -u .'
+alias gs='git status'
+alias ga='git add'
 alias gp='git push'
 alias vim='nvim'
 alias gl='git log --graph -a'
