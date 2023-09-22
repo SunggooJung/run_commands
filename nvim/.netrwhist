@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =0
+let g:netrw_dirhist_0='/home/sg/Admin/core_environment/shared/dotfiles/.vim'
+let g:netrw_dirhist_9='/home/sg/Projects/alpaca_ws/src/visualizer_web/dashboard/src/apps'
+let g:netrw_dirhist_8='/home/sg/Projects/alpaca_ws/src/visualizer_web/dashboard/src'
+let g:netrw_dirhist_7='/home/sg/Projects/alpaca_ws/src/visualizer_web/dashboard'
+let g:netrw_dirhist_6='/home/sg/Projects/alpaca_ws/src/visualizer_web/dashboard/tests'
+let g:netrw_dirhist_5='/home/sg/Projects/alpaca_ws/src/visualizer_web/dashboard'
+let g:netrw_dirhist_4='/home/sg/Projects/alpaca_ws/src/visualizer_web/dashboard/dist'
+let g:netrw_dirhist_3='/home/sg/Projects/alpaca_ws/src/visualizer_web/dashboard'
+let g:netrw_dirhist_2='/home/sg/Projects/alpaca_ws/src/visualizer_web/dashboard/dependencies'
+let g:netrw_dirhist_1='/home/sg/Projects/alpaca_ws/src/visualizer_web/dashboard'

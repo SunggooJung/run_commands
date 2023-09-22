@@ -1,0 +1,13 @@
+alias gc='git commit -n'
+alias ga='git add -u .'
+alias gp='git push'
+alias vim='nvim'
+alias gl='git log --graph -a'
+alias rmswp='rm -rf ~/.local/state/nvim/swap/*.swp'
+alias killer='tmux kill-server && subtenv cleanup && killall -9 rosmaster && killall -9 roscore && killall -9 rviz'
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+set -o vi
