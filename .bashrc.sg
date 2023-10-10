@@ -3,10 +3,10 @@ alias gc='git commit -n'
 alias gs='git status'
 alias ga='git add'
 alias gp='git push'
-alias vim='nvim'
 alias gl='git log --graph -a'
 alias rmswp='rm -rf ~/.local/state/nvim/swap/*.swp'
 alias killer='tmux kill-server && subtenv cleanup && killall -9 rosmaster && killall -9 roscore && killall -9 rviz'
+alias fgrep='find . -type f -iname'
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
