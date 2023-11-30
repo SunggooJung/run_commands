@@ -1,9 +1,16 @@
 #github pac:  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
+
+#git alias
+alias gcp='gitcheck.py'
 alias gc='git commit -n'
 alias gs='git status'
 alias ga='git add'
 alias gp='git push'
 alias gl='git log --graph -a'
+
+#docker alias
+alias dil='docker image ls'
+
 alias rmswp='rm -rf ~/.local/state/nvim/swap/*.swp'
 alias killer='tmux kill-server && subtenv cleanup && killall -9 rosmaster && killall -9 roscore && killall -9 rviz'
 alias fgrep='find . -type f -iname'
