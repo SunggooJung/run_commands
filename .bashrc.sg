@@ -1,22 +1,29 @@
 #github pac:  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
 
 #git alias
-alias gcp='gitcheck.py'
 alias gc='git commit -n'
 alias gs='git status'
 alias ga='git add'
-alias gp='git push'
+alias gps='git push'
+alias gpl='git pull'
 alias gl='git log --graph -a'
 
 #docker alias
 alias dil='docker image ls'
 
+alias vim='nvim'
 alias rmswp='rm -rf ~/.local/state/nvim/swap/*.swp'
 alias killer='tmux kill-server && subtenv cleanup && killall -9 rosmaster && killall -9 roscore && killall -9 rviz'
 alias fgrep='find . -type f -iname'
+alias rvzd7='export ROS_MASTER_URI=http://delta7:11311 && rosrun rviz rviz -d /home/sg/rviz/delta7.rviz'
+alias rvzd2='export ROS_MASTER_URI=http://delta2:11311 && rosrun rviz rviz -d /home/sg/rviz/delta2.rviz'
+alias rvz='rosrun rviz rviz -d /home/sg/rviz/delta2.rviz'
+alias gcfg='git config --global user.email "sunggoo@fieldai.com"; git config --global user.name "Sunggoo Jung"'
+
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 export PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
-
+export PATH=/usr/local/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
 set -o vi
