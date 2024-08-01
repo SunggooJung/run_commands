@@ -25,7 +25,7 @@ alias rvzd8='export ROS_MASTER_URI=http://delta8:11311 && rosrun rviz rviz -d ~/
 alias rvzd2='export ROS_MASTER_URI=http://delta2:11311 && rosrun rviz rviz -d ~/rviz/delta2.rviz'
 alias rvzr1='export ROS_MASTER_URI=http://red1:11311 && rosrun rviz rviz -d ~/rviz/red1.rviz'
 alias rvz='rosrun rviz rviz -d ~/rviz/delta2.rviz'
-alias gcfg='git config --global user.email "sunggoo@fieldai.com"; git config --global user.name "Sunggoo Jung"'
+alias gcfg='git config --global user.email "sunggoo@fieldai.com"; git config --global user.name "sunggoo-fieldai"'
 
 parse_git_branch() {
      git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
